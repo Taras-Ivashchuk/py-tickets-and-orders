@@ -28,6 +28,7 @@ def create_user(
 def get_user(user_id: int) -> User:
     return get_user_model().objects.get(pk=user_id)
 
+
 @transaction.atomic
 def update_user(
         user_id: int,
